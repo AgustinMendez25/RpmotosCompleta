@@ -1,0 +1,132 @@
+/*---------------GENERAL--------------*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background: #efefef;
+}
+
+.fullwidth {
+    width:100%;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.espacio {
+    padding: 30px;
+}
+
+/*---------------INDEX--------------*/
+
+.product-container h3 {
+    color: rgb(57,55,55);
+    font-size: 26px;
+    padding-top: 3px;
+    padding-bottom: 10px;
+}
+
+.product-container p {
+    color: rgb(50,43,43);
+    font-size: 24px;
+    padding-top: 14px;
+    font-weight:bold;
+}
+
+.product-container :hover {
+    text-decoration: none;
+}
+
+
+/*-------------PRODUCTO------------*/
+
+.contenido-producto{
+    background: white;
+    max-width:1024px;
+    margin:70px auto;
+    padding:30px;
+    border-radius:6px;
+    box-shadow: 1px 1px 4px rgb(0,0,0,0.2)
+}
+
+.img-producto {
+    height: 550px;
+    max-width: 600px;
+    padding: 3px;
+    margin:12px;
+    border: rgb(0,0,0,0.2) ridge 1px;
+}
+
+@media (max-width: 960px) {
+    .img-producto {
+      max-width: 500px;
+    }
+  }
+
+@media (max-width: 851px) {
+    .contenedor-imgproducto {
+      width: 100%;
+    }
+  }
+
+@media (max-width: 523px) {
+    .img-producto {
+      max-width: 350px;
+      height: 350px;
+    }
+  }
+
+.info-producto {
+    padding: 30px;
+    border: rgb(0,0,0,0.2) solid 1px;
+    height:550px
+}
+
+.info-producto h3 {
+    padding-bottom:15px
+}
+
+/*---------MENSAJES----------*/
+
+.caja-mensaje {
+    background: #810b0b;
+    height: 170px;
+    padding: 30px 60px;
+    margin-top: 60px;
+    border-radius: 15px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(255,255,255);
+}
+
+.caja-mensaje h1 {
+    text-shadow: 2px 3px 3px rgb(0,0,0);
+    margin-bottom: 17px;
+}
+
+.caja-mensaje a {
+    font-size:24px;
+}
+
+/*---------------------ADMINISTRADOR------------------------*/
+
+.tabla-modificar{
+    background: #8d1717;
+    padding:30px;
+    border-radius: 15px;
+    margin:40px;
+}
+
+.tabla-modificar h1 {
+    color: white;
+    padding:15px;
+}
+
+.tabla-modificar label {
+    color: white;
+}
