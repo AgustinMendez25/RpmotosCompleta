@@ -8,13 +8,13 @@
         if ($nombre_img == !NULL){
 
             //Obtiene el directorio para cargar la imagen
-            $directorio = $_SERVER['DOCUMENT_ROOT'].'/rpmotos/assets/img/';
+            $directorio = $_SERVER['DOCUMENT_ROOT'].'/rpmotos//img/';
             
             //Carga la imagen en el servidor
             move_uploaded_file($_FILES['imagen']['tmp_name'],$directorio.$nombre_img);
             
             //Carga la URL en la base de datos
-            $url_imagen = 'assets/img/'.$nombre_img;
+            $url_imagen = '/img/'.$nombre_img;
 
             $query = "SELECT * FROM info_producto where idProducto='$id'";
             $envio = $conexion->query($query);
@@ -36,12 +36,12 @@
 
     <!--------------------------VINCULACION CSS-------------------------->
     
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/Animated-Pretty-Product-List-v12.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="/css/Animated-Pretty-Product-List-v12.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!--------------------------FUENTES DE TEXTO-------------------------->
 
@@ -49,11 +49,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Autour+One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/fonts/typicons.min.css">
+    <link rel="stylesheet" href="/fonts/fontawesome5-overrides.min.css">
 
 </head>
 

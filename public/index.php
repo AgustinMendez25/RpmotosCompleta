@@ -15,12 +15,12 @@
 
     <!--------------------------VINCULACION CSS-------------------------->
     
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/Animated-Pretty-Product-List-v12.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="/css/Animated-Pretty-Product-List-v12.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!--------------------------FUENTES DE TEXTO-------------------------->
 
@@ -28,11 +28,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Autour+One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/fonts/typicons.min.css">
+    <link rel="stylesheet" href="/fonts/fontawesome5-overrides.min.css">
 
 </head>
 
@@ -46,7 +46,7 @@
 
         <div class="row" style="padding-bottom: 4px;margin-right: 0px;margin-left: 0px;">
             <div class="col-12 col-md-2 d-flex justify-content-center justify-content-md-end">
-                <a href="index.php"><img class="float-right logo" src="assets/img/logo.png"></a>
+                <a href="index.php"><img class="float-right logo" src="/img/logo.png"></a>
             </div>
             <div class="col-12 col-md-10 d-flex justify-content-between">
                 <div class="row align-items-center" style="width: 100%;margin: 0;">
@@ -140,9 +140,9 @@
 
         <div class="carousel slide" data-ride="carousel" id="carousel-1">
             <div class="carousel-inner">
-                <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/1Slider.jpg" alt="Slide Image" style="max-height: 700px;"></div>
-                <div class="carousel-item"><img class="w-100 d-block" src="assets/img/2Slider.jpg" alt="Slide Image" style="max-height: 700px;"></div>
-                <div class="carousel-item"><img class="w-100 d-block" src="assets/img/3Slider.jpg" alt="Slide Image" style="max-height: 700px;"></div>
+                <div class="carousel-item active"><img class="w-100 d-block" src="/img/1Slider.jpg" alt="Slide Image" style="max-height: 700px;"></div>
+                <div class="carousel-item"><img class="w-100 d-block" src="/img/2Slider.jpg" alt="Slide Image" style="max-height: 700px;"></div>
+                <div class="carousel-item"><img class="w-100 d-block" src="/img/3Slider.jpg" alt="Slide Image" style="max-height: 700px;"></div>
             </div>
             <div>
                 <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
@@ -178,7 +178,7 @@
                         <a class="product-image" href="producto.php?id=<?php echo $row['id'] ?>">
                             <?php
                                 if ($row['URL_imagen'] == null){
-                                    $url = "assets/img/logo.png";
+                                    $url = "/img/logo.png";
                                 }else{
                                     $url = $row['URL_imagen'];
                                 }
@@ -203,7 +203,7 @@
     <footer>
         <div class="row d-flex justify-content-center" style="margin-right: 0px;margin-left: 0px;">
             <div class="col-10 col-md-4 text-center">
-                <img class= "logo" style="margin:30px 0px;" src="assets/img/logo.png">
+                <img class= "logo" style="margin:30px 0px;" src="/img/logo.png">
                 <p class="text-left p-info-negocio">Descripción del negocioD escripción del negocio Descripción del negocioD escripción del negocio</p>
             </div>
             <div class="col-12 col-md-6 d-flex justify-content-around flex-wrap flex-md-nowrap">
@@ -239,8 +239,8 @@
 
     <!--------------------------SCRIPTS JS-------------------------->
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
 </body>
 
