@@ -154,10 +154,10 @@
             </div>
             <div class="d-flex justify-content-center contenedor-imgproducto">
                 <?php
-                    if ($row['URL_imagen'] == null){
+                    if (substr($row['URL_imagen'],6) == null){
                         $url = "/img/logo.png";
                     }else{
-                        $url = $row['URL_imagen'];
+                        $url = substr($row['URL_imagen'],6);
                     }
                 ?>
                 <img class="img-producto" src="<?php echo $url ?>">

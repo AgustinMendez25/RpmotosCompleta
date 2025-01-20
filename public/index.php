@@ -177,10 +177,10 @@
                     <div class="product-container">
                         <a class="product-image" href="producto.php?id=<?php echo $row['id'] ?>">
                             <?php
-                                if ($row['URL_imagen'] == null){
+                                if (substr($row['URL_imagen'],6) == null){
                                     $url = "/img/logo.png";
                                 }else{
-                                    $url = $row['URL_imagen'];
+                                    $url = substr($row['URL_imagen'],6);
                                 }
                             ?>
                             <img src="<?php echo $url ?>">

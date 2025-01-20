@@ -285,14 +285,14 @@
                             <td><?php echo $row['descripcion']; ?></td>
                             <td>
                                 <?php
-                                    if ($row['URL_imagen'] == null){
+                                    if (substr($row['URL_imagen'],6) == null){
                                 ?>
                                 <a href="cargar_imagen.php?id=<?php echo $row['id']; ?>">
                                     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modificar">Cargar imágen</button>
                                 </a>
                                 <?php
                                     }else{
-                                        echo $row['URL_imagen']; 
+                                        echo substr($row['URL_imagen'],6); 
                                     }
                                  ?>
                             </td>
@@ -301,7 +301,7 @@
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modificar">Editar Descripción</button>
                                 </a>
                                 <?php
-                                    if ($row['URL_imagen'] != null){
+                                    if (substr($row['URL_imagen'],6) != null){
                                 ?>
                                 <a href="eliminar_productoImagen.php?id=<?php echo $row['id']; ?>">
                                     <button type="button" class="btn btn-danger" style="margin-top:8px">Borrar Imagen</button>

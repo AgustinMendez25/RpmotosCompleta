@@ -213,10 +213,10 @@
                     <div class="card" style="margin: 12px;text-align: center;">
                         <a href="producto.php?id=<?php echo $row['id'] ?>">
                             <?php
-                                if ($row['URL_imagen'] == null){
+                                if (substr($row['URL_imagen'],6) == null){
                                     $url = "/img/logo.png";
                                 }else{
-                                    $url = $row['URL_imagen'];
+                                    $url = substr($row['URL_imagen'],6);
                                 }
                             ?>
                             <img src="<?php echo $url ?>" style="width: 220px;height:220px;">
